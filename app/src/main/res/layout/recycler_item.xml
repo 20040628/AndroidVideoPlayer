@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <!-- 视频封面 -->
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:importantForAccessibility="no"
+            android:layout_marginTop="8dp"
+            />
+
+        <!-- 观看人数 -->
+        <TextView
+            android:id="@+id/tv_views"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:background="#505055"
+            android:importantForAccessibility="no"
+            />
+
+    </FrameLayout>
+
+    <!-- 简介 -->
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
+        android:textColor="#2b2b2b"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 顶部：头像 + 用户名 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="16sp"
+            android:textColor="#ababab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
