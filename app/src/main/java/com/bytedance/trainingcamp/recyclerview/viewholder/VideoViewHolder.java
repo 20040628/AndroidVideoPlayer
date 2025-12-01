@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bytedance.trainingcamp.R;
+import com.bytedance.trainingcamp.VideoPlayerActivity;
 import com.bytedance.trainingcamp.recyclerview.bean.VideoBean;
 
 public class VideoViewHolder extends RecyclerView.ViewHolder {
@@ -52,8 +53,10 @@ public class VideoViewHolder extends RecyclerView.ViewHolder {
         ivCover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"));
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(videoBean.getVideoLink()));
+//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(videoBean.getVideoLink()));
+//                itemView.getContext().startActivity(intent);
+                Intent intent = new Intent(itemView.getContext(), VideoPlayerActivity.class);
+                intent.putExtra("video_url", videoBean.getVideoLink());
                 itemView.getContext().startActivity(intent);
             }
         });
