@@ -2,6 +2,7 @@ package com.bytedance.trainingcamp.recyclerview.viewholder;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +16,7 @@ import com.bytedance.trainingcamp.VideoPlayerActivity;
 import com.bytedance.trainingcamp.recyclerview.bean.VideoBean;
 
 public class VideoViewHolder extends RecyclerView.ViewHolder {
+    private static final String TAG = "VideoViewHolder";
 
     private ImageView ivAvatar;
     private TextView tvName;

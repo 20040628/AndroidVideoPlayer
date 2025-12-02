@@ -37,11 +37,11 @@
   },
   {
     "id": 5,
-    "videoLink": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-    "cover": "http://picsum.photos/400/600.jpg",
+    "videoLink": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "cover": "https://img.jakpost.net/c/2019/09/03/2019_09_03_78912_1567484272._large.jp",
     "views": 15,
     "description": "The sunset glow is so beautiful. I miss you so much.",
-    "avatar": "https://picsum.photos/100/100?random=12",
+    "avatar": "https://picsum.photos/100/100?random=15",
     "username": "TravelCat"
   },
   {
@@ -50,7 +50,7 @@
     "cover": "https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg",
     "views": 30,
     "description": "will the wise. STRANGER THINGS 5 SPOILERS!! omggg im gagged",
-    "avatar": "https://picsum.photos/100/100?random=13",
+    "avatar": "https://picsum.photos/100/100?random=14",
     "username": "Sk8Boy"
   }
 ]

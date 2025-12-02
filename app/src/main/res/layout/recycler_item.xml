@@ -1,13 +1,13 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="8dp"
+    android:padding="4dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="250dp">
 
         <!-- 视频封面 -->
         <ImageView
@@ -21,7 +21,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:gravity="top|start"
-            android:layout_margin="5dp"
+            android:layout_margin="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_rounded_gdp_red"
+                android:background="@drawable/bg_square_red"
                 android:padding="5dp"
                 android:text="LIVE"
                 android:textColor="@color/white"

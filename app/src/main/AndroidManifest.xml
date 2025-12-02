@@ -29,7 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".VideoPlayerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Training_camp_network"/>
 
     </application>
 

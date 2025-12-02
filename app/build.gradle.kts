@@ -64,4 +64,6 @@ dependencies {
     // Glide 图片加载库
     implementation("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+    // exoPlayer 视频播放库
+    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
 }
