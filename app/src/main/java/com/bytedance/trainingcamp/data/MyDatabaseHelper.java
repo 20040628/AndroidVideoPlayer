@@ -61,40 +61,26 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         // 创建表
         db.execSQL(TABLE_CREATE);
 
-        // 首次创建数据库时调用，执行建表语句
-        try {
-            InputStream is = context.getAssets().open("videos.json");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-            StringBuilder jsonBuilder = new StringBuilder();
-            String line;
-
-            while ((line = reader.readLine()) != null) {
-                jsonBuilder.append(line);
-            }
-
-            reader.close();
-
-            // 转成 JSONArray
-            JSONArray jsonArray = new JSONArray(jsonBuilder.toString());
-
-            // 逐条插入数据库
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject obj = jsonArray.getJSONObject(i);
-
-                ContentValues values = new ContentValues();
-                values.put(COLUMN_USERNAME, obj.getString("username"));
-                values.put(COLUMN_AVATAR, obj.getString("avatar"));
-                values.put(COLUMN_DESC, obj.getString("description"));
-                values.put(COLUMN_COVER, obj.getString("cover"));
-                values.put(COLUMN_VIDEO_LINK, obj.getString("video_link"));
-                values.put(COLUMN_VIEWS, obj.getInt("views"));
-
-                db.insert(TABLE_NOTES, null, values);
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        // 首次创建数据库时调用，执行建表语句
+//        try {
+//            // 逐条插入数据库
+//            for (int i = 0; i < jsonArray.length(); i++) {
+//                JSONObject obj = jsonArray.getJSONObject(i);
+//
+//                ContentValues values = new ContentValues();
+//                values.put(COLUMN_USERNAME, obj.getString("username"));
+//                values.put(COLUMN_AVATAR, obj.getString("avatar"));
+//                values.put(COLUMN_DESC, obj.getString("description"));
+//                values.put(COLUMN_COVER, obj.getString("cover"));
+//                values.put(COLUMN_VIDEO_LINK, obj.getString("video_link"));
+//                values.put(COLUMN_VIEWS, obj.getInt("views"));
+//
+//                db.insert(TABLE_NOTES, null, values);
+//            }
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
     /**

@@ -24,7 +24,7 @@ public class VideoApi {
 
     private static final String TAG = "VideoApi";
 
-    // 你的 API 地址
+    // API 地址
     private static final String VIDEO_API_URL =
             "https://raw.githubusercontent.com/20040628/AndroidVideoPlayer/refs/heads/main/app/src/main/assets/videos.json";
 

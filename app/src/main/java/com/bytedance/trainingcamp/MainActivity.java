@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private StaggeredAdapter staggeredAdapter;
-//    private MyDatabaseHelper dbHelper;
+    private MyDatabaseHelper dbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_video);
 
         // 初始化数据库
-//        dbHelper = new MyDatabaseHelper(this);
+        dbHelper = new MyDatabaseHelper(this);
 
         // 获取 RecyclerView
         mRecyclerView = findViewById(R.id.recyclerview_id);
@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
         // 获取在线视频列表
         fetchVideoList();
+
+        // 通过网络获得的数据存到数据库
+
     }
 
     private void fetchVideoList() {
